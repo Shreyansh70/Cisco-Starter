@@ -1,9 +1,11 @@
 import React from 'react'
-
-function Banner() {
+import './Banner.css'
+function Banner(props) {
   return (
-    <h1 class="heading-title"> SEXTANT </h1>
-  )
+    <div className="Banner">
+      <h1>{props.bannerText}</h1>
+    </div>
+  );
 }
 
 export default Banner

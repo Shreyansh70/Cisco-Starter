@@ -1,9 +1,13 @@
 import React from 'react'
+import "./Exhibit.css";
 
-function Exhibit() {
+function Exhibit(props) {
   return (
-    <h3>Exhibit Component</h3>
-  )
+    <div className="Exhibit">
+      <h2 className="ExhibitHeading">{props.name}</h2>
+      <div className="ExhibitContent">{props.children}</div>
+    </div>
+  );
 }
 
 export default Exhibit
