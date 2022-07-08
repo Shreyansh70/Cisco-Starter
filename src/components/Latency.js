@@ -9,7 +9,8 @@ function Latency() {
       console.log("WebSocket Client Connected");
     };
     client.onmessage = (message) => {
-      const sent = message.timeStamp;
+        // console.log(message);
+      const sent = message.data;
       client.close();
       const recv = new Date().getTime();
       console.log(sent , recv);
